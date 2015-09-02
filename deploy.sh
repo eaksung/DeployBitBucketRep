@@ -21,7 +21,6 @@ if [ "$?" = "0" ]; then
    rm -rf $localDir"/*" $localDir"/.ht*"
    cp -r $tempDir"/." $localDir
    rm -rf $tempDir
-   chmod 775 $localDir"/imgtemp"
    echo -e "Complete"
 else
    echo -e "Can not access to Bitbucket"
